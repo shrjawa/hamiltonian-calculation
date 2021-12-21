@@ -3,9 +3,6 @@
 
 double mass(int *arr_m,int len)
 {
-    
-
-    
     double dd=0;
     int oj;
     for(oj=0;oj<len;oj=oj+2)
@@ -14,11 +11,9 @@ double mass(int *arr_m,int len)
         {
             double mass_d;
             mass_d=(double) arr_m[oj+1]/arr_m[oj];
-            dd=dd+mass_d;
-            
+            dd=dd+mass_d;    
         }
     }
-   // printf("mass=%f\n\n",dd);
     return dd;
 }    
 
@@ -27,7 +22,6 @@ double diagonal(int *arr,double coupling,int len)
     
     int j,k;
     double a,s,c,v;
-    
     double diag_H=0;
     for(j=0;j<len;j=j+2)
     {
@@ -64,6 +58,5 @@ double diagonal(int *arr,double coupling,int len)
         
         }
     }
-   // printf("diag_H=%f\n\n",diag_H);
     return diag_H;
 }
